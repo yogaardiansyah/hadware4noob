@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Apa Itu Perangkat Keras Komputer?</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Kelas untuk animasi masuk */
+        .animate-on-load {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <!-- Judul dengan gradien animasi -->
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-on-load">
+                Dunia Perangkat Keras Komputer
+            </h1>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-12">
+        <section id="intro" class="bg-white p-8 rounded-lg shadow-xl mb-12 animate-on-load" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-4 border-blue-500 pb-2">Selamat Datang!</h2>
+            <p class="mb-4 text-lg">Selamat datang di situs web interaktif kami! Di sini, Anda akan menemukan penjelasan sederhana tentang apa itu perangkat keras dan berbagai komponen yang membentuk sebuah komputer.</p>
+            
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Apa Itu Perangkat Keras Komputer?</h3>
+            <p class="mb-4">Perangkat keras komputer (hardware) adalah semua komponen fisik dari sebuah sistem komputer yang dapat kita lihat dan sentuh. [16, 33] Ini mencakup segala sesuatu mulai dari sirkuit di dalam komputer hingga perangkat eksternal seperti monitor dan keyboard. [2] Tanpa perangkat keras, perangkat lunak (software) tidak akan memiliki platform untuk berjalan. [7] Keduanya saling melengkapi untuk membuat komputer berfungsi dengan baik. [16]</p>
+            <p>Komponen-komponen ini bekerja sama untuk memproses data, menyimpan informasi, dan memungkinkan Anda berinteraksi dengan komputer. [1, 7] Jelajahi komponen utama di bawah ini!</p>
+        </section>
+
+        <!-- Kartu Interaktif -->
+        <section id="components" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- CPU Card -->
+            <a href="cpu.html" class="block group animate-on-load" style="transition-delay: 400ms;">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full p-6 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:ring-4 group-hover:ring-blue-500 group-hover:ring-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-blue-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V4m0 16v-2M8 8l2-2 2 2m4 4l2 2-2 2m-4-4l-2 2 2 2m-4-4h8v8H8z"></path></svg>
+                        <h3 class="text-xl font-bold text-blue-600">CPU (Central Processing Unit)</h3>
+                    </div>
+                    <p class="text-gray-600">"Otak" dari komputer yang menjalankan semua perintah dan pemrosesan data.</p>
+                </div>
+            </a>
+            <!-- RAM Card -->
+            <a href="ram.html" class="block group animate-on-load" style="transition-delay: 500ms;">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full p-6 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:ring-4 group-hover:ring-green-500 group-hover:ring-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-green-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                        <h3 class="text-xl font-bold text-green-600">RAM (Random Access Memory)</h3>
+                    </div>
+                    <p class="text-gray-600">Memori jangka pendek yang menyimpan data yang sedang aktif digunakan.</p>
+                </div>
+            </a>
+            <!-- Motherboard Card -->
+            <a href="motherboard.html" class="block group animate-on-load" style="transition-delay: 600ms;">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full p-6 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:ring-4 group-hover:ring-purple-500 group-hover:ring-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        <h3 class="text-xl font-bold text-purple-600">Motherboard</h3>
+                    </div>
+                    <p class="text-gray-600">"Tulang punggung" yang menghubungkan semua komponen komputer.</p>
+                </div>
+            </a>
+            <!-- Storage Card -->
+            <a href="storage.html" class="block group animate-on-load" style="transition-delay: 700ms;">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full p-6 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:ring-4 group-hover:ring-yellow-500 group-hover:ring-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                        <h3 class="text-xl font-bold text-yellow-600">Perangkat Penyimpanan</h3>
+                    </div>
+                    <p class="text-gray-600">Memori jangka panjang untuk menyimpan file dan aplikasi Anda.</p>
+                </div>
+            </a>
+            <!-- I/O Devices Card -->
+            <a href="io-devices.html" class="block group animate-on-load" style="transition-delay: 800ms;">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full p-6 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl group-hover:ring-4 group-hover:ring-red-500 group-hover:ring-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-red-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                        <h3 class="text-xl font-bold text-red-600">Perangkat Input/Output</h3>
+                    </div>
+                    <p class="text-gray-600">Alat yang memungkinkan Anda berinteraksi dengan komputer.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-12">
+        <p>2025</p>
+    </footer>
+
+    <!-- Script untuk Animasi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-on-load');
+            elements.forEach((el) => {
+                // Menambahkan sedikit jeda sebelum memulai animasi
+                setTimeout(() => {
+                    el.classList.add('is-visible');
+                }, 100); // Jeda 100ms
+            });
+        });
+    </script>
+
+</body>
+</html>
