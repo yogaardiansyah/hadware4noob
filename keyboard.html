@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard - Suara Digital Anda ⌨️</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-pink-600 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">⌨️</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">Keyboard</h1>
+            <p class="mt-4 text-xl text-pink-300">Suara Digital Anda</p>
+        </section>
+
+        <!-- Penjelasan Apa itu Keyboard -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Apa Sebenarnya Keyboard Itu?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Keyboard adalah perangkat input utama yang memungkinkan Anda untuk "berbicara" dengan komputer. Setiap tombol yang Anda tekan mengirimkan sinyal spesifik yang diterjemahkan menjadi huruf, angka, simbol, atau perintah. Dari menulis email hingga memasukkan *cheat code* di game, keyboard adalah jembatan antara pikiran Anda dan dunia digital.
+            </p>
+        </section>
+
+        <!-- Cara Kerja Keyboard -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 400ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Di Balik Setiap Tombol</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🗺️</div><h3 class="text-xl font-bold text-blue-400">1. Papan Sirkuit</h3><p class="mt-2 text-gray-400">Di bawah tombol ada grid sirkuit yang kompleks.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🔘</div><h3 class="text-xl font-bold text-green-400">2. Saklar Aktif</h3><p class="mt-2 text-gray-400">Menekan tombol akan menghubungkan sirkuit di titik tertentu.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">칩️</div><h3 class="text-xl font-bold text-yellow-400">3. Kode Dikirim</h3><p class="mt-2 text-gray-400">Prosesor keyboard mengirimkan kode unik dari titik tersebut.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">💻</div><h3 class="text-xl font-bold text-red-400">4. Diterjemahkan</h3><p class="mt-2 text-gray-400">Komputer menerima kode dan menampilkannya sebagai karakter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jenis-Jenis Keyboard -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Rasa Mengetik yang Berbeda</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Membrane -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-6xl mb-4">🤫</div>
+                    <h3 class="text-2xl font-bold text-white">Keyboard Membrane</h3>
+                    <p class="mt-2 text-gray-300">Menggunakan lapisan karet di bawah tombol. Rasanya empuk dan senyap. Umumnya ditemukan di laptop dan keyboard kantor yang terjangkau.</p>
+                </div>
+                <!-- Mechanical -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-pink-500">
+                    <div class="text-6xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold text-white">Keyboard Mechanical</h3>
+                    <p class="mt-2 text-gray-300">Setiap tombol memiliki saklar fisik sendiri. Memberikan feedback "klik" yang memuaskan, sangat tahan lama, dan disukai oleh para gamer dan penulis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tombol-Tombol Spesial -->
+        <section class="reveal-on-scroll" style="transition-delay: 800ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Lebih dari Sekadar Huruf</h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div><div class="text-4xl mb-2">⚙️</div><h3 class="text-xl font-bold">Tombol Fungsi (F1-F12)</h3><p class="text-gray-400">Jalan pintas untuk berbagai fungsi.</p></div>
+                <div><div class="text-4xl mb-2">➕</div><h3 class="text-xl font-bold">Tombol Modifier (Ctrl, Alt, Shift)</h3><p class="text-gray-400">Mengubah fungsi tombol lain.</p></div>
+                <div><div class="text-4xl mb-2">🧭</div><h3 class="text-xl font-bold">Tombol Navigasi (Panah)</h3><p class="text-gray-400">Untuk bergerak di dalam teks.</p></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
