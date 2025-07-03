@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>GPU - Sang Artis Digital 🎨</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-cyan-600 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">🎨</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">GPU (Graphics Processing Unit)</h1>
+            <p class="mt-4 text-xl text-cyan-300">Sang Artis di Dunia Digital Anda</p>
+        </section>
+
+        <!-- Penjelasan Apa itu GPU -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Apa Sebenarnya GPU Itu?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Bayangkan GPU sebagai **tim seniman super cepat** di dalam komputer Anda. Sementara CPU (otak utama) sibuk mengurus logika dan perintah, GPU adalah prosesor khusus yang fokus pada satu hal: menciptakan semua yang Anda lihat di layar. Dari ikon di desktop, video yang Anda tonton, hingga dunia 3D yang kompleks di dalam game, GPU-lah yang "melukis" semuanya dengan kecepatan luar biasa.
+            </p>
+        </section>
+
+        <!-- CPU vs GPU -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 400ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Manajer Proyek vs. Tim Seniman</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- CPU -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-blue-500">
+                    <div class="text-6xl mb-4">🧠</div>
+                    <h3 class="text-2xl font-bold text-white">CPU: Si Manajer Proyek</h3>
+                    <p class="mt-2 text-gray-300">Memiliki beberapa inti (core) yang sangat kuat. Hebat dalam menangani beberapa tugas **kompleks** secara berurutan. Seperti seorang profesor jenius yang bisa memecahkan masalah matematika sulit satu per satu.</p>
+                </div>
+                <!-- GPU -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-cyan-500">
+                    <div class="text-6xl mb-4">🎨</div>
+                    <h3 class="text-2xl font-bold text-white">GPU: Tim Seniman Raksasa</h3>
+                    <p class="mt-2 text-gray-300">Memiliki ribuan inti (core) yang lebih kecil. Hebat dalam menangani ribuan tugas **sederhana** secara bersamaan (paralel). Seperti ribuan seniman yang melukis satu piksel pada kanvas raksasa di saat yang sama.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kekuatan Super GPU -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Kekuatan Super GPU</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🎮</div><h3 class="text-xl font-bold text-red-400">Rendering Grafis</h3><p class="mt-2 text-gray-400">Menciptakan dunia 3D yang realistis dan mulus di dalam video game.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🎬</div><h3 class="text-xl font-bold text-yellow-400">Akselerasi Video</h3><p class="mt-2 text-gray-400">Memastikan pemutaran video beresolusi tinggi berjalan lancar tanpa patah-patah.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">⛓️</div><h3 class="text-xl font-bold text-purple-400">Pemrosesan Paralel</h3><p class="mt-2 text-gray-400">Kekuatannya kini digunakan untuk AI, riset ilmiah, dan penambangan data.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jenis-Jenis GPU -->
+        <section class="reveal-on-scroll" style="transition-delay: 800ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Sketsa Cepat vs. Mahakarya Detail</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-6xl mb-4">✏️</div>
+                    <h3 class="text-2xl font-bold text-white">GPU Terintegrasi (Integrated)</h3>
+                    <p class="mt-2 text-gray-300">GPU dasar yang menyatu dengan CPU. Cukup untuk tugas sehari-hari seperti browsing dan menonton video. Ibarat membuat sketsa cepat.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-cyan-500">
+                    <div class="text-6xl mb-4">🖼️</div>
+                    <h3 class="text-2xl font-bold text-white">GPU Terpisah (Dedicated)</h3>
+                    <p class="mt-2 text-gray-300">Kartu grafis terpisah yang jauh lebih kuat dengan memori (VRAM) sendiri. Wajib untuk gaming serius, editing video, dan desain 3D. Ibarat melukis mahakarya detail.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
