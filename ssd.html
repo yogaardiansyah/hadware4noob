@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSD - Gudang Kilat Digital ⚡️</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #2424e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-blue-600 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">⚡️</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">SSD (Solid State Drive)</h1>
+            <p class="mt-4 text-xl text-blue-300">Gudang Kilat untuk Data Anda</p>
+        </section>
+
+        <!-- Penjelasan Apa itu SSD -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Apa yang Membuatnya Begitu Cepat?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                SSD adalah evolusi dari perangkat penyimpanan. Tidak seperti Hard Disk Drive (HDD) yang menggunakan piringan berputar dan lengan mekanis, SSD adalah **solid-state**, yang berarti ia **tidak memiliki bagian yang bergerak sama sekali**. [28, 30] Ia menyimpan data pada chip memori flash, mirip seperti USB drive yang super besar dan super cepat. Tanpa perlu menunggu piringan berputar, data dapat diakses secara instan.
+            </p>
+        </section>
+
+        <!-- Evolusi Kecepatan: SATA vs NVMe -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 400ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Evolusi Kecepatan: Jalan Raya vs. Sirkuit F1</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- SATA SSD -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-6xl mb-4">🔌</div>
+                    <h3 class="text-2xl font-bold text-white">SATA SSD</h3>
+                    <p class="mt-2 text-gray-300">Ini adalah "jalan raya" yang andal. Bentuknya kotak 2.5 inci dan terhubung melalui kabel SATA. Jauh lebih cepat dari HDD, ini adalah upgrade yang fantastis untuk komputer lama.</p>
+                </div>
+                <!-- NVMe M.2 SSD -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-blue-500">
+                    <div class="text-6xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-bold text-white">NVMe M.2 SSD</h3>
+                    <p class="mt-2 text-gray-300">Ini adalah "sirkuit balap F1". Bentuknya seperti permen karet dan dipasang langsung ke motherboard. Kecepatannya bisa berkali-kali lipat dari SATA SSD, membuatnya standar emas untuk PC modern.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manfaat di Dunia Nyata -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Manfaat di Dunia Nyata</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">⏱️</div>
+                    <h3 class="text-xl font-bold text-green-400">Booting Super Cepat</h3>
+                    <p class="mt-2 text-gray-400">Komputer Anda akan menyala dan siap digunakan dalam hitungan detik, bukan menit.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🎮</div>
+                    <h3 class="text-xl font-bold text-yellow-400">Loading Game Instan</h3>
+                    <p class="mt-2 text-gray-400">Ucapkan selamat tinggal pada layar loading yang lama. Dunia game Anda akan dimuat hampir seketika.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">📁</div>
+                    <h3 class="text-xl font-bold text-red-400">Transfer File Kilat</h3>
+                    <p class="mt-2 text-gray-400">Memindahkan file berukuran besar (seperti video 4K) hanya membutuhkan beberapa detik.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sihir di Balik Kecepatan -->
+        <section class="reveal-on-scroll" style="transition-delay: 800ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Sihir di Balik Kecepatan</h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700 max-w-3xl mx-auto text-center">
+                <div class="text-7xl mb-4">💡</div>
+                <h3 class="text-2xl font-bold text-white">Memori Flash NAND</h3>
+                <p class="mt-2 text-lg text-gray-300">Bayangkan jutaan saklar lampu mikroskopis yang bisa dinyalakan (1) atau dimatikan (0) untuk menyimpan data. Karena proses ini sepenuhnya elektronik, tanpa ada bagian mekanis yang perlu bergerak, pencarian dan pengambilan data terjadi dalam sekejap mata.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
