@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDD - Gudang Arsip Klasik 💿</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-green-600 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">💿</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">HDD (Hard Disk Drive)</h1>
+            <p class="mt-4 text-xl text-green-300">Gudang Arsip Klasik untuk Data Anda</p>
+        </section>
+
+        <!-- Penjelasan Apa itu HDD -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Apa Sebenarnya HDD Itu?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                HDD adalah teknologi penyimpanan data yang telah teruji oleh waktu. Bayangkan ia sebagai **perpustakaan mekanis raksasa**. Di dalamnya, ada beberapa piringan magnetik (disebut *platters*) yang berputar dengan sangat cepat, mirip seperti piringan hitam. Sebuah lengan pembaca/penulis bergerak di atas piringan ini untuk mencari dan memanipulasi data. [28, 30] Semua bagian yang bergerak inilah yang membedakannya dari SSD.
+            </p>
+        </section>
+
+        <!-- Cara Kerja HDD -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 400ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Di Balik Piringan Berputar</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🔄</div><h3 class="text-xl font-bold text-blue-400">1. Piringan Berputar</h3><p class="mt-2 text-gray-400">Piringan magnetik berputar ribuan kali per menit (RPM).</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">✍️</div><h3 class="text-xl font-bold text-green-400">2. Lengan Bergerak</h3><p class="mt-2 text-gray-400">Lengan pembaca bergerak ke lokasi data yang benar di piringan.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🧲</div><h3 class="text-xl font-bold text-yellow-400">3. Data Dibaca</h3><p class="mt-2 text-gray-400">Ujung lengan (head) membaca atau menulis data secara magnetis.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">💻</div><h3 class="text-xl font-bold text-red-400">4. Data Dikirim</h3><p class="mt-2 text-gray-400">Data yang telah dibaca dikirim ke seluruh sistem komputer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kelebihan vs Kelemahan -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Kelebihan vs. Kelemahan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Kelebihan -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-green-500">
+                    <div class="text-6xl mb-4">📚</div>
+                    <h3 class="text-2xl font-bold text-white">Kelebihan: Kapasitas Raksasa</h3>
+                    <p class="mt-2 text-gray-300">Kekuatan terbesar HDD adalah **harga per Gigabyte (GB) yang sangat murah**. Anda bisa mendapatkan ruang penyimpanan berukuran Terabyte (TB) dengan biaya yang jauh lebih rendah dibandingkan SSD.</p>
+                </div>
+                <!-- Kelemahan -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-red-500">
+                    <div class="text-6xl mb-4">🐢</div>
+                    <h3 class="text-2xl font-bold text-white">Kelemahan: Lebih Lambat & Rapuh</h3>
+                    <p class="mt-2 text-gray-300">Karena harus menunggu piringan berputar dan lengan bergerak, HDD jauh lebih lambat. Bagian mekanisnya juga membuatnya lebih rentan terhadap guncangan dan kerusakan fisik.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kapan HDD Menjadi Pilihan Tepat? -->
+        <section class="reveal-on-scroll" style="transition-delay: 800ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Kapan HDD Menjadi Pilihan Tepat?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🎬</div>
+                    <h3 class="text-xl font-bold">Perpustakaan Media</h3>
+                    <p class="mt-2 text-gray-400">Sempurna untuk menyimpan koleksi film, musik, dan foto Anda yang besar.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🎮</div>
+                    <h3 class="text-xl font-bold">Gudang Game</h3>
+                    <p class="mt-2 text-gray-400">Ideal untuk menyimpan game-game yang jarang Anda mainkan untuk menghemat ruang SSD.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🛡️</div>
+                    <h3 class="text-xl font-bold">Backup Data</h3>
+                    <p class="mt-2 text-gray-400">Kapasitasnya yang besar menjadikannya pilihan ekonomis untuk mencadangkan semua data penting Anda.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
