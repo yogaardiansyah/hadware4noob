@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor - Jendela ke Dunia Digital 🖥️</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-gray-600 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">🖥️</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">Monitor</h1>
+            <p class="mt-4 text-xl text-gray-300">Jendela Anda ke Dunia Digital</p>
+        </section>
+
+        <!-- Penjelasan Apa itu Monitor -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Apa Sebenarnya Monitor Itu?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Monitor adalah perangkat output utama yang menerjemahkan bahasa digital komputer menjadi sesuatu yang bisa kita lihat. Setiap kali GPU (Sang Artis Digital) selesai "melukis" sebuah gambar, monitor-lah yang menampilkannya kepada Anda. Tanpa monitor, komputer Anda hanyalah sebuah kotak misterius yang bekerja dalam sunyi.
+            </p>
+        </section>
+
+        <!-- Sihir di Balik Layar -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 400ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Sihir di Balik Layar: Piksel</h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700 max-w-3xl mx-auto text-center">
+                <div class="text-7xl mb-4">🎨</div>
+                <h3 class="text-2xl font-bold text-white">Mosaik Raksasa</h3>
+                <p class="mt-2 text-lg text-gray-300">Bayangkan layar monitor sebagai sebuah mosaik raksasa yang terbuat dari jutaan titik cahaya kecil yang disebut **piksel**. Setiap piksel bisa menyala dalam jutaan kombinasi warna (Merah, Hijau, Biru). Dengan mengatur warna setiap piksel, monitor dapat menciptakan gambar yang tajam dan hidup.</p>
+            </div>
+        </section>
+
+        <!-- Spesifikasi Kunci -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Spesifikasi Kunci yang Perlu Diketahui</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🖼️</div>
+                    <h3 class="text-xl font-bold text-blue-400">Resolusi (Ketajaman)</h3>
+                    <p class="mt-2 text-gray-400">Jumlah total piksel (misal: 1920x1080). Semakin tinggi resolusinya, semakin tajam dan detail gambarnya.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🏃‍♂️</div>
+                    <h3 class="text-xl font-bold text-green-400">Refresh Rate (Kehalusan)</h3>
+                    <p class="mt-2 text-gray-400">Seberapa sering gambar di layar diperbarui per detik (Hz). Semakin tinggi angkanya, semakin mulus gerakannya.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">⚡️</div>
+                    <h3 class="text-xl font-bold text-yellow-400">Response Time (Kecepatan)</h3>
+                    <p class="mt-2 text-gray-400">Seberapa cepat piksel bisa berubah warna (ms). Semakin rendah angkanya, semakin sedikit efek "ghosting" pada gambar bergerak.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jenis-Jenis Panel -->
+        <section class="reveal-on-scroll" style="transition-delay: 800ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Setiap Jendela Punya Karakter</h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div><div class="text-4xl mb-2">🎨</div><h3 class="text-xl font-bold">IPS</h3><p class="text-gray-400">Warna paling akurat dan sudut pandang lebar. Terbaik untuk desainer.</p></div>
+                <div><div class="text-4xl mb-2">🎬</div><h3 class="text-xl font-bold">VA</h3><p class="text-gray-400">Kontras terbaik (hitam pekat). Terbaik untuk menonton film.</p></div>
+                <div><div class="text-4xl mb-2">🎮</div><h3 class="text-xl font-bold">TN</h3><p class="text-gray-400">Waktu respons tercepat. Terbaik untuk gamer kompetitif.</p></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
