@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio - Suara Dunia Digital 🔊</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-green-600 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">🔊</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">Perangkat Audio</h1>
+            <p class="mt-4 text-xl text-green-300">Memberi Suara pada Dunia Digital Anda</p>
+        </section>
+
+        <!-- Penjelasan Apa itu Perangkat Audio -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Telinga dan Suara Komputer</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Perangkat audio adalah semua komponen yang memungkinkan komputer Anda untuk "mendengar" dan "berbicara". Mereka menangani segala hal yang berhubungan dengan suara. **Perangkat input audio** mengubah gelombang suara dari dunia nyata menjadi data digital, sementara **perangkat output audio** melakukan sebaliknya, mengubah data digital kembali menjadi suara yang bisa kita dengar.
+            </p>
+        </section>
+
+        <!-- Input vs Output -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Kolom Input Audio -->
+            <div class="reveal-on-scroll" style="transition-delay: 400ms;">
+                <h2 class="text-4xl font-bold text-center text-white mb-8">Audio Input: Mendengar 🎤</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700 flex items-center space-x-4">
+                        <div class="text-5xl">🎙️</div>
+                        <div><h3 class="text-xl font-bold text-white">Mikrofon</h3><p class="text-gray-400">"Telinga" utama komputer untuk menangkap suara Anda saat panggilan video, streaming, atau rekaman.</p></div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700 flex items-center space-x-4">
+                        <div class="text-5xl">🎛️</div>
+                        <div><h3 class="text-xl font-bold text-white">Audio Interface</h3><p class="text-gray-400">Perangkat canggih untuk menghubungkan mikrofon profesional dan instrumen musik dengan kualitas suara superior.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Output Audio -->
+            <div class="reveal-on-scroll" style="transition-delay: 500ms;">
+                <h2 class="text-4xl font-bold text-center text-white mb-8">Audio Output: Berbicara 🎧</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700 flex items-center space-x-4">
+                        <div class="text-5xl">🔊</div>
+                        <div><h3 class="text-xl font-bold text-white">Speaker</h3><p class="text-gray-400">"Suara" komputer untuk berbagi musik, efek game, atau audio film dengan seluruh ruangan.</p></div>
+                    </div>
+                    <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700 flex items-center space-x-4">
+                        <div class="text-5xl">🎧</div>
+                        <div><h3 class="text-xl font-bold text-white">Headphone / Earphone</h3><p class="text-gray-400">Memberikan pengalaman mendengarkan yang personal dan imersif, langsung ke telinga Anda.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sang Penerjemah: Sound Card -->
+        <section class="mt-16 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Sang Penerjemah: Sound Card</h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <div class="text-4xl mb-2">칩️</div>
+                    <h3 class="text-xl font-bold">Audio Onboard</h3>
+                    <p class="text-gray-400">Chip audio yang sudah terpasang di motherboard. Kualitasnya sudah sangat baik untuk kebutuhan sehari-hari seperti mendengarkan musik atau rapat online.</p>
+                </div>
+                <div>
+                    <div class="text-4xl mb-2">🎼</div>
+                    <h3 class="text-xl font-bold">Sound Card Dedicated</h3>
+                    <p class="text-gray-400">Kartu tambahan yang dipasang untuk kualitas suara superior. Wajib bagi para audiophile, produser musik, dan gamer yang menginginkan audio terbaik.</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-400 mt-6 max-w-3xl mx-auto">Komponen ini berisi **DAC** (Digital-to-Analog Converter) untuk mengubah data menjadi suara, dan **ADC** (Analog-to-Digital Converter) untuk mengubah suara menjadi data.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
