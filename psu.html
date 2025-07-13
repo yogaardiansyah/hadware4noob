@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSU - Jantung Komputer ⚡️</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- tsParticles (untuk background partikel) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <style>
+        /* Gaya konsisten dari halaman utama */
+        body {
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradient-animation 16s ease infinite;
+        }
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        #tsparticles {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+        }
+        .reveal-on-scroll {
+            opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans overflow-x-hidden">
+
+    <!-- Background Partikel -->
+    <div id="tsparticles"></div>
+
+    <!-- Tombol Kembali -->
+    <nav class="absolute top-0 left-0 p-6 z-20">
+        <a href="index.html" class="bg-gray-800/50 backdrop-blur-sm text-white font-bold py-3 px-5 rounded-full shadow-lg hover:bg-yellow-500 transform hover:scale-105 transition-all duration-300 text-lg">
+            ⬅️ Kembali
+        </a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- Judul Utama -->
+        <section class="text-center mb-16 reveal-on-scroll">
+            <div class="text-8xl mb-4">⚡️</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white">PSU (Power Supply Unit)</h1>
+            <p class="mt-4 text-xl text-yellow-300">Jantung yang Memompa Kehidupan Digital</p>
+        </section>
+
+        <!-- Penjelasan Apa itu PSU -->
+        <section class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl mb-12 reveal-on-scroll border border-gray-700" style="transition-delay: 200ms;">
+            <h2 class="text-3xl font-bold text-white mb-4">Apa Sebenarnya PSU Itu?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Jika CPU adalah otak, maka PSU adalah **jantung** dari komputer Anda. Fungsinya sangat vital: ia mengambil listrik arus bolak-balik (AC) yang kasar dari stopkontak di dinding, lalu mengubahnya menjadi listrik arus searah (DC) yang stabil dan bersih. "Darah" listrik inilah yang kemudian dipompa ke semua komponen lain—motherboard, CPU, GPU—agar mereka bisa hidup dan berfungsi dengan baik.
+            </p>
+        </section>
+
+        <!-- Mengapa PSU yang Baik Penting -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 400ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Mengapa "Jantung" yang Sehat Itu Penting?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">📈</div>
+                    <h3 class="text-xl font-bold text-blue-400">Stabilitas</h3>
+                    <p class="mt-2 text-gray-400">PSU yang baik memberikan daya yang stabil, mencegah crash dan kerusakan komponen akibat voltase yang naik-turun.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">✅</div>
+                    <h3 class="text-xl font-bold text-green-400">Efisiensi (80 Plus)</h3>
+                    <p class="mt-2 text-gray-400">Rating "80 Plus" berarti PSU tidak boros listrik. Semakin tinggi ratingnya (Bronze, Gold, Platinum), semakin sedikit daya yang terbuang sebagai panas.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <div class="text-5xl mb-3">🛡️</div>
+                    <h3 class="text-xl font-bold text-red-400">Keamanan</h3>
+                    <p class="mt-2 text-gray-400">Dilengkapi fitur proteksi untuk melindungi komponen Anda dari korsleting, lonjakan listrik, dan masalah lainnya.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kabel-Kabel Kekuatan (Modularitas) -->
+        <section class="mb-12 reveal-on-scroll" style="transition-delay: 600ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Sistem Pipa Daya (Modularitas)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h3 class="text-xl font-bold text-white">Non-Modular</h3>
+                    <p class="mt-2 text-gray-400">Semua kabel terpasang permanen. Paling ekonomis, tapi manajemen kabel bisa berantakan.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-yellow-500">
+                    <h3 class="text-xl font-bold text-white">Semi-Modular</h3>
+                    <p class="mt-2 text-gray-400">Kabel esensial (untuk motherboard & CPU) terpasang, sisanya bisa dilepas. Keseimbangan yang baik.</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-yellow-500">
+                    <h3 class="text-xl font-bold text-white">Full-Modular</h3>
+                    <p class="mt-2 text-gray-400">Semua kabel bisa dilepas. Memberikan kebebasan penuh dan manajemen kabel paling rapi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Berapa Watt yang Dibutuhkan? -->
+        <section class="reveal-on-scroll" style="transition-delay: 800ms;">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">Berapa Kuat "Jantung" yang Anda Butuhkan?</h2>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-gray-700 max-w-3xl mx-auto text-center">
+                <div class="text-7xl mb-4">💡</div>
+                <h3 class="text-2xl font-bold text-white">Wattage (Daya)</h3>
+                <p class="mt-2 text-lg text-gray-300">Wattage adalah ukuran total daya yang bisa disediakan oleh PSU. Anda harus memilih PSU dengan wattage yang cukup untuk memberi makan semua komponen Anda, terutama CPU dan GPU yang paling "lapar". Lebih baik memiliki sedikit ruang ekstra (*headroom*) daripada kekurangan daya.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-10 mt-12">
+        <p class="text-gray-400">&copy; 2025 Perjalanan Interaktif Perangkat Keras Komputer</p>
+    </footer>
+
+    <script>
+        // --- Script untuk Animasi Reveal on Scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // --- Script untuk Konfigurasi tsParticles ---
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 } },
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.1, width: 1 },
+                collisions: { enable: true },
+                move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 0.5, straight: false },
+                number: { density: { enable: true, area: 800 }, value: 80 },
+                opacity: { value: 0.2 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 5 } },
+            },
+            detectRetina: true,
+        });
+    </script>
+
+</body>
+</html>
